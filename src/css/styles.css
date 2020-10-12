@@ -1,0 +1,260 @@
+@font-face {
+    font-family: LHFUncialCaps;
+    src: url(../../assets/LHFUncialCaps.ttf);
+}
+
+body {
+    margin: 0;
+    display: flex;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.card-filter-container {
+    position: fixed;
+    top: 0px;
+    bottom: 0px;
+    left: 0px;
+    width: 20vw;
+    /* height: 100vh; */
+    /* flex: 15%; */
+    min-width: 150px;
+    border-right: 1px solid gray;
+    overflow: auto;
+}
+
+.hs-logo-container {
+    margin: 20px;
+    max-width: 250px;
+}
+
+.hs-logo {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.cardsContainer {
+    position: fixed;
+    top: 0px;
+    bottom: 0px;
+    right: 20vw;
+    left: 20vw;
+    overflow: auto;
+    /* text-align: center; */
+    /* margin-left: max(20vw, 150px);
+    margin-right: max(20vw, 200px); */
+}
+
+.select-container {
+    margin-bottom: 7vh;
+}
+
+.filter-select {
+    width: 85%;
+    display: block;
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 10px;
+}
+
+.patch,
+.author,
+.cached-cards {
+    font-size: 0.7rem;
+    color: #646464;
+    text-align: center;
+}
+
+.author {
+    margin-bottom: 5px;
+}
+
+.individual-card-container {
+    display: inline-block;
+    height: 300px;
+}
+
+.card-img {
+    width: 192px;
+    margin: 10px 15px;
+}
+
+.card-img:hover {
+    box-shadow: 0 0 3px 2px rgb(169, 169, 169);
+}
+
+.card-img:hover {
+    cursor: pointer;
+}
+
+.right-sidebar {
+    position: fixed;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    width: 20vw;
+    min-width: 200px;
+    border-left: 1px solid gray;
+}
+
+.deck-info {
+    height: 50vh;
+    border-bottom: 1px solid gray;
+    overflow: auto;
+}
+
+.card-info {
+    height: 50vh;
+    overflow: auto;
+}
+
+.mt-15vh {
+    margin-top: 15vh;
+}
+
+.mt-10vh {
+    margin-top: 10vh;
+}
+
+.no-cards-shown {
+    margin-right: auto;
+    margin-left: auto;
+    /* width: 50%; */
+    text-align: center;
+}
+
+.no-cards-shown-img {
+    border-radius: 10%;
+    width: 20vw;
+}
+
+.error-img {
+    /* border-radius: 10%; */
+    width: 40vw;
+}
+
+.no-cards-shown-text {
+    font-family: LHFUncialCaps, Arial, Helvetica, sans-serif;
+    color: #646464;
+    letter-spacing: 2px;
+}
+
+.deck-info {
+    text-align: center;
+}
+
+.deck-content-title,
+.card-info-title {
+    font-family: LHFUncialCaps, Arial, Helvetica, sans-serif;
+    color: #646464;
+    /* letter-spacing: 2px; */
+    text-align: center;
+    font-size: 1.5rem;
+    margin: 20px 5px;
+    /* padding: 5px 15px; */
+}
+
+.deck-element {
+    /* font-family: LHFUncialCaps, Arial, Helvetica, sans-serif; */
+    background: #f4f4f4;
+    color: #444;
+    /* border: 2px solid #007bff; */
+    position: relative;
+    height: 2rem;
+    margin: 15px 30px;
+    padding: 5px 15px;
+    border-radius: 4px;
+    border: 1px solid rgb(169, 169, 169);
+}
+
+.deck-title-element {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    left: 20px;
+    height: 1rem;
+    margin-top: -0.5rem;
+}
+
+.deck-section-button {
+    display: inline-block;
+    -webkit-appearance: none;
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    cursor: pointer;
+    background: #007bff;
+    color: white;
+    border: 2px solid #007bff;
+    margin: 0 0.5rem;
+}
+
+.cards-in-deck-list {
+    list-style-type: none;
+    padding: 0px;
+}
+
+.delete-icon {
+    position: absolute;
+    top: 50%;
+    right: 5px;
+    height: 24px;
+    margin-top: -12px;
+    color: #f44336;
+    cursor: pointer;
+    /* vertical-align: middle; */
+}
+
+.deck-list-element {
+    position: relative;
+    height: 2rem;
+    margin: 5px 20px;
+    border-radius: 4px;
+    border: 1px solid rgb(169, 169, 169);
+    color: #444;
+}
+
+.card-deck-name {
+    position: absolute;
+    top: 50%;
+    left: 20px;
+    height: 1rem;
+    margin-top: -0.5rem;
+    cursor: pointer;
+}
+
+.deck-title-span {
+    padding: 5px 5px;
+    border-radius: 4px;
+}
+
+.deck-title-span:hover {
+    background: #f4f4f4;
+}
+
+.deck-title-span:focus {
+    outline: 0;
+    border: 2px solid rgb(169, 169, 169);
+    background: #f4f4f4;
+}
+
+[type='text']:active,
+[type='text']:focus {
+    outline: 0;
+    border: 2px solid rgb(169, 169, 169);
+    background: #f4f4f4;
+}
+
+[type='text'] {
+    display: inline-block;
+}
+
+.card-info-property {
+    margin: 5px 20px;
+    color: #444;
+}
+
+.strong {
+    font-weight: bold;
+}
