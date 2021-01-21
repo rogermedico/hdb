@@ -26,4 +26,4 @@ Using the Terminal, navigate to the project folder and run `npm install`.
 
 ## Live example
 
-[https://hardcore-curie-c445a0.netlify.app/](https://hardcore-curie-c445a0.netlify.app/)
+[https://dazzling-hermann-abd205.netlify.app/](https://dazzling-hermann-abd205.netlify.app/)
